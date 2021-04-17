@@ -1,0 +1,68 @@
+.animation {
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	z-index: 1;
+	
+}
+.monsters {
+	
+
+position: absolute;
+	top:100px;
+	left:50px;
+	padding-top: 10px;
+    width: 400px;
+	position: absolute;
+	animation: monsters 8s linear infinite alternate;
+	z-index: 3; }
+	
+	
+	@keyframes monsters{
+	0% {left: 100px; top:50px;}
+	25% {left:350px; top: 100px}
+	50% {left: 550px; top: 150px;}
+	75% {left: 750px; top: 200px;}
+	100% { left:900px; top: 150px;}
+}
+
+
+.monstr2 {
+	 position: absolute;
+	top: 40px;
+	left: 20px;
+	width: 150px;
+	height: 150px;
+	animation: monstr2 10s infinite;
+}
+@keyframes monstr2 {
+	0%{transform:translate(60px, 450px) rotate(-10deg) scale(1);}
+	25%{transform:translate(60px, 450px) rotate(20deg) scale(1.1);}
+	50%{transform:translate(60px, 450px) rotate(-10deg) scale(1);}
+	75%{transform:translate(60px, 450px) rotate(20deg) scale(1.1);}
+	100%{transform:translate(60px, 450px) rotate(-10deg) scale(1);}
+
+}
+.monstr3 {
+    top: 40px;
+	left: 50px;
+	width: 150px;
+	height: 150px;
+	animation: monstr3 15s infinite;
+    position: absolute;
+}
+ @keyframes monstr3 {
+
+ 	0% { top: 1px; }
+ 	100% {top: 100px;  }
+ }
+
+.ballon {
+	  top: 0px;
+	left: 748px;
+	width: 600px;
+	height: 430px;
+	
+    position: absolute;
+}
